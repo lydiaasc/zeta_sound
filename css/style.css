@@ -37,9 +37,18 @@
     transform: translate(-50%, -50%);
 }
 
+.btn{
+    font-size: 80%;
+}
+
+.btn-outline-light{
+    border-width: 0.9px; 
+
+}
 
 .rounded-btn {
     border-radius: 20px; 
+    margin: 2em;
 }
 
 .gradient-btn {
@@ -75,7 +84,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+.header-text{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin: 1em;
+}
+
 
 .img-fluid{
     padding: 2em;
