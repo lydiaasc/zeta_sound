@@ -18,6 +18,12 @@
     background-color: transparent;
     z-index: 9999;
 }
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
 /* video */
 .video-header {
     position: relative;
