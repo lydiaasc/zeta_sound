@@ -200,40 +200,17 @@ img, .gif {
     display: block;
     margin: 0 auto;    
     transition: all 0.3s ease;
+    text-align: center;
     
-  }
-  .btn-custom:hover {
+}
+.btn-custom:hover {
     background-color: #1b1464;
     color: white;
-  }
+ }
   /* Ajustes para  iconos */
   /* .icono-cartera {
     font-size: 2rem;
     margin-top: 1rem;
   } */
 
-  /* PRUEBA */
-  .custom-cardnews {
-    border: 2px solid #3300ff;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-}
-
-.custom-cardnews img {
-    object-fit: cover;
-    height: 200px; 
-    width: 200px; 
-    border-radius: 8px;
-}
-
-.custom-cardnews h3{
-    margin: 1em;
-}
-
-
-.cardnews-title {
-    font-size: 1.5rem;
-    color: #2b2b75;
-    text-align: left; /* Texto justificado a la izquierda */
-}
+  
