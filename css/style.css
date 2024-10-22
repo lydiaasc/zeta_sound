@@ -118,6 +118,28 @@
     background: linear-gradient(transparent, #150067); 
 }
 
+/* POPUP */
+
+.modal-content {
+    background-color: #3300ff; 
+    color: white; 
+}
+
+.btn-close {
+    background-color: white; 
+    color: #3300ff; 
+    border-radius: 60%; 
+    padding: 5px; 
+}
+
+.btn-close:hover {
+    background-color: #3300ff;
+    color: white; 
+}
+
+.btn-close:focus {
+    box-shadow: none; 
+}
 
 /* CREADO PARA GENTE QUE MUEVE EL MUNDO */
 
@@ -214,3 +236,42 @@ img, .gif {
   } */
 
   
+/* Footer */
+
+.footer {
+    background-color: white;
+    padding: 40px 0;
+    color: #3300ff;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 10rem;
+    font-weight: bold;
+    color: #3300ff;
+}
+
+.social-icons img {
+    width: 40px;
+}
+
+.social-icons a {
+    color: #3300ff;
+    font-size: 30px; 
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #2200aa;
+}
+
+.links-grid a {
+    color: #3300ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links-grid a:hover {
+    color: #2200aa;
+}
