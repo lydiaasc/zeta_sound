@@ -1,3 +1,9 @@
+/* NOTAS */
+    /* Border Radius Iguales */
+    /* Paleta de color consistente */
+
+
+
 /* HEADER */
 .navbar-expand-lg{
     background-color: transparent;
@@ -214,21 +220,22 @@ img, .gif {
     background-color: transparent;
     border: 2px solid #150067;
     border-radius: 30px;
-    padding: 10px 30px;
+    padding: 10px 30px; /* Ajusta el espacio alrededor del texto */
     color: #150067;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 3rem;
-    display: block;
-    margin: 0 auto;    
+    display: inline-block; /* Ocupa solo el espacio del contenido */
     transition: all 0.3s ease;
     text-align: center;
-    
+    text-decoration: none;
 }
+
 .btn-custom:hover {
     background-color: #1b1464;
     color: white;
- }
+}
+
+
   /* Ajustes para  iconos */
   /* .icono-cartera {
     font-size: 2rem;
@@ -305,3 +312,86 @@ img, .gif {
 .links-grid a:hover {
     color: #2200aa;
 }
+
+
+
+/* NEWS */
+
+#news .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#news .card-img-left {
+    width: 200px; 
+    height: 225px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+#news .card-news {
+    width: 60%; 
+    padding: 15px;
+}
+
+#news .card-title {
+    font-size: 1.5rem;
+    color: #150067;
+    margin-bottom: 10px;
+}
+
+#news .card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.spotify {
+    position: absolute;
+    border-radius: 12px;
+    width: 50%;
+}
+
+/*  */
+#experience {
+    margin: none !important;
+}
+
+
+
+
+/*  */
+.gallery-container {
+    overflow: hidden;
+    width: 100%; 
+}
+
+.gallery {
+    display: flex;
+    gap: 10px; 
+    animation: scroll 20s linear infinite;
+}
+
+.gallery img {
+    width: 200px; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+

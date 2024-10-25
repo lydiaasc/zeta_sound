@@ -131,7 +131,7 @@
       </div>
     </div> -->
 
-    <section id="tickets" class="container my-5">
+  <section id="tickets" class="container my-5">
       <div class="container mt-5">
         
         <h1 class="title">Elige tu abono</h1>
@@ -169,39 +169,109 @@
         </div>
         
         <!-- Botón -->
-        <div class="container my-5">
+        <div class="container my-5 d-flex justify-content-end">
           <!-- Botón que redirige a otra página -->
-          <a href="paginas/compra.html" class="btn-custom">Compra tu entrada</a>
+          <a href="paginas/compra.html" class="btn-custom">Prepárate para ver a tus artistas favoritos</a>
       </div>
+      
     </div>
-    </section>
+  </section>
 
-    <section id="news" class="container my-5">
-        <h1 class="title">Highlights & News</h1>
-        <p class="subtitle">¿Cómo que aún no sabes todo de nosotros? Toma anda...</p>
-    </section>
+  <section id="news" class="container my-5">
+      <h1 class="title">Highlights & News</h1>
+      <p class="subtitle">¿Cómo que aún no sabes todo de nosotros? Toma anda...</p>
+  
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+              <div class="card d-flex flex-row align-items-center">
+                  <img src="media/imagen_dj.jpg" class="card-img-left" alt="Imagen DJ">
+                  <div class="card-news p-3">
+                      <h5 class="card-title">Nuevos Espacios</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="card d-flex flex-row align-items-center">
+                <img src="media/imagen_dj.jpg" class="card-img-left" alt="Imagen DJ">
+                <div class="card-news p-3">
+                    <h5 class="card-title">Nuestra Comunidad</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card d-flex flex-row align-items-center">
+                <img src="media/festival_1.jpeg" class="card-img-left" alt="Imagen DJ">
+                <div class="card-news p-3">
+                    <h5 class="card-title">Trabaja con nosotros</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card d-flex flex-row align-items-center">
+                <img src="media/foto_dos.jpg" class="card-img-left" alt="Imagen DJ">
+                <div class="card-news p-3">
+                    <h5 class="card-title">Tus Artistas Favoritos</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+          </div>
+
+          
+      </div>
+  </section>
+  
 
     <section id="artist" class="container my-5">
         <h1 class="title">Artistas</h1>
-        <p class="subtitle">¿Enserio te vas a perder a estos artistazos?</p>
+        <p class="subtitle">¿Enserio te vas a perder a estos pedazo de artístas?</p>
   </section>
 
   <section id="radio" class="container my-5">
     <h1 class="title">Zeta Radio</h1>
     <p class="subtitle">Ponte al día, que no te pille el toro</p>
     <div class="video-radio-container">
-        <div class="video-radio">
-            <video autoplay muted loop>
-                <source src="media/ondas_radio.mp4" type="video/mp4">
-            </video>
-        </div>
+        <!--  -->
+
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6JbeQSgbRYjOsY7d9dWiZl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class="spotify"></iframe>
+        <video autoplay muted loop>
+          <source src="media/ondas_radio.mp4" type="video/mp4">
+        </video>
+        
+
+       
     </div>
 </section>
 
-    <section id="experience" class="container my-5">
+  <section id="experience" class="container my-5">
+      <div class="text-experience">
         <h1 class="title">Zeta Experience</h1>
         <p class="subtitle">¿No quieres disfrutar como ellos? Apúntate tontorrón</p>
+      </div>
+      
   </section>
+
+  <div class="gallery-container">
+    <div class="gallery">
+        <img src="media/festival_1.jpeg" alt="Image 1">
+        <img src="media/rosalia-4.webp" alt="Image 2">
+        <img src="media/foto_cuatro.png" alt="Image 3">
+        <img src="media/foto_cuatro.png" alt="Image 4">
+        <img src="media/foto_cuatro.png" alt="Image 5">
+
+        <img src="media/foto_cuatro.png" alt="Image 1">
+        <img src="media/foto_cuatro.png" alt="Image 2">
+        <img src="media/foto_cuatro.png" alt="Image 3">
+        <img src="media/foto_cuatro.png" alt="Image 4">
+        <img src="media/foto_cuatro.png" alt="Image 5">
+    </div>
+  </div>
+
 
     <!-- Pop-up -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -267,6 +337,10 @@
         </div>
       </div>
   </footer>
+
+
+
+
   
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
