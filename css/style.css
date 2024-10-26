@@ -356,10 +356,13 @@ img, .gif {
     width: 50%;
 }
 
-/*  */
 #experience {
     margin: none !important;
 }
+
+
+/* PRUEBA CARUSEL */
+
 
 
 
@@ -391,6 +394,7 @@ img, .gif {
         transform: translateX(-100%);
     }
 }
+
 
 
 
