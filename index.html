@@ -16,9 +16,6 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    
-
-
 </head>
 <body>
     <div class="header">
@@ -159,15 +156,16 @@
               <p>Acceso Front Stage o plataforma VIP elevada.</p>
               <p>Barra privada.</p>
               <p>Baños privados.</p>
-              <!-- Añadir iconos -->
             </div>
           </div>
+
           <div class="col-md-3">
             <div class="tickets">
               <h3>Entrada de día</h3>
               <p>Acceso general.</p>
             </div>
           </div>
+          
           <div class="col-md-3">
             <div class="tickets">
               <h3>Front Stage</h3>
@@ -229,8 +227,6 @@
                 </div>
             </div>
           </div>
-
-          
       </div>
   </section>
   
@@ -238,56 +234,89 @@
   <section id="artist" class="container my-5">
         <h1 class="title">Artistas</h1>
         <p class="subtitle">¿Enserio te vas a perder a estos pedazo de artístas?</p>
-
-      <!--  -->
- 
-
-
-
-
-
   </section>
 
   <section id="radio" class="container my-5">
     <h1 class="title">Zeta Radio</h1>
     <p class="subtitle">Ponte al día, que no te pille el toro</p>
     <div class="video-radio-container">
-        <!--  -->
 
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6JbeQSgbRYjOsY7d9dWiZl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class="spotify"></iframe>
         <video autoplay muted loop>
           <source src="media/ondas_radio.mp4" type="video/mp4">
         </video>
-        
-
-       
     </div>
-</section>
+  </section>
 
   <section id="experience" class="container my-5">
       <div class="text-experience">
         <h1 class="title">Zeta Experience</h1>
         <p class="subtitle">¿No quieres disfrutar como ellos? Apúntate tontorrón</p>
       </div>
-      
   </section>
 
   <div class="gallery-container">
     <div class="gallery">
         <img src="media/festival_1.jpeg" alt="Image 1">
-        <img src="media/rosalia-4.webp" alt="Image 2">
+        <img src="media/foto_dos.jpg" alt="Image 2">
         <img src="media/foto_cuatro.png" alt="Image 3">
-        <img src="media/foto_cuatro.png" alt="Image 4">
-        <img src="media/foto_cuatro.png" alt="Image 5">
+        <img src="media/foto_dos.jpg" alt="Image 4">
+        <img src="media/foto_tres.jpg" alt="Image 5">
 
-        <img src="media/foto_cuatro.png" alt="Image 1">
-        <img src="media/foto_cuatro.png" alt="Image 2">
+        <img src="media/festival_1.jpeg" alt="Image 1">
+        <img src="media/foto_dos.jpg" alt="Image 2">
         <img src="media/foto_cuatro.png" alt="Image 3">
-        <img src="media/foto_cuatro.png" alt="Image 4">
-        <img src="media/foto_cuatro.png" alt="Image 5">
+        <img src="media/foto_dos.jpg" alt="Image 4">
+        <img src="media/foto_tres.jpg" alt="Image 5">
     </div>
   </div>
 
+  <div class="gallery-container2">
+    <div class="gallery2">
+        <img src="media/festival_1.jpeg" alt="Image 1">
+        <img src="media/foto_dos.jpg" alt="Image 2">
+        <img src="media/foto_cuatro.png" alt="Image 3">
+        <img src="media/foto_dos.jpg" alt="Image 4">
+        <img src="media/foto_tres.jpg" alt="Image 5">
+
+        <img src="media/festival_1.jpeg" alt="Image 1">
+        <img src="media/foto_dos.jpg" alt="Image 2">
+        <img src="media/foto_cuatro.png" alt="Image 3">
+        <img src="media/foto_dos.jpg" alt="Image 4">
+        <img src="media/foto_tres.jpg" alt="Image 5">
+    </div>
+  </div>
+
+  <section id="form" class="container my-5">
+    <div class="text-form">
+      <h1 class="title">¿Quieres ser parte de esto?</h1>
+      <p class="subtitle">Subscríbete a nuestra newletter y entérate de todo
+        antes que nadie.
+      </p>
+    </div>
+  </section>
+
+  <div class="container-form">
+    <form id="subscriptionForm">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Repetir Contraseña</label>
+            <input type="password" id="confirmPassword" required>
+        </div>
+        <button type="submit" class="submit-btn">Subscribirme</button>
+    </form>
+  </div>
 
     <!-- Pop-up -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -309,7 +338,6 @@
       <img src="media/patrocinadores_zs.png" class="img-fluid" alt="...">
    </div>
     <div class="container">
-        <!-- <h1 class="footer-title">ZETA SOUND</h1> -->
 
         <div class="logo-footer">
           <img src="media/logo_color_Zeta_Sound.png" class="img-fluid" alt="...">
@@ -354,10 +382,6 @@
       </div>
   </footer>
 
-
-
-
-  
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -367,8 +391,6 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
      <script src="js/script.js"></script>
-
-
 
 </body>
 </html>

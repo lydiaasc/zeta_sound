@@ -360,14 +360,8 @@ img, .gif {
     margin: none !important;
 }
 
+/* DERECHA A IZQUIERDA */
 
-/* PRUEBA CARUSEL */
-
-
-
-
-
-/*  */
 .gallery-container {
     overflow: hidden;
     width: 100%; 
@@ -376,7 +370,7 @@ img, .gif {
 .gallery {
     display: flex;
     gap: 10px; 
-    animation: scroll 20s linear infinite;
+    animation: scrollRightToLeft 20s linear infinite; 
 }
 
 .gallery img {
@@ -386,16 +380,89 @@ img, .gif {
     border-radius: 8px; 
 }
 
-@keyframes scroll {
+@keyframes scrollRightToLeft {
     from {
-        transform: translateX(0);
+        transform: translateX(100%); 
     }
     to {
         transform: translateX(-100%);
     }
 }
 
+/* IZQUIERDA A DERECHA */
 
+.gallery-container2 {
+    overflow: hidden;
+    width: 100%; 
+}
 
+.gallery2 {
+    display: flex;
+    gap: 10px; 
+    animation: scrollLeftToRight 20s linear infinite; 
+}
 
+.gallery2 img {
+    width: 200px; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 8px; 
+}
 
+@keyframes scrollLeftToRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%); 
+    }
+}
+
+/* FORMULARIO */
+
+.container-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #3300ff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3300ff;
+    border-radius: 30px;
+}
+
+input:focus {
+    border-color: #3300ff;
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #3300ff;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #2200aa;
+}
