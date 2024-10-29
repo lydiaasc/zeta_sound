@@ -31,3 +31,16 @@ document.getElementById('subscriptionForm').addEventListener('submit', function(
 
     window.location.href = 'index.html';
 });
+
+
+
+// COLOR MENU
+
+document.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".collapse.navbar-collapse");
+    if (window.scrollY > 10) { // Cambia el valor si quieres que el fondo aparezca antes o después
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});

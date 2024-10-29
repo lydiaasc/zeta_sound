@@ -14,6 +14,57 @@
     filter: invert(1);
 }
 
+/* Estilos para fijar el menú con margen superior */
+.collapse.navbar-collapse {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 1em;
+    z-index: 1000;
+    margin: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav {
+    justify-content: center; /* Centra los elementos del menú */
+}
+
+
+.navbar-toggler {
+    position: fixed;
+    top: 40px; /* Ajusta el botón de menú con el mismo margen */
+    right: 10px;
+    z-index: 1100;
+}
+
+/* FONDO COLOR MENÚ SCROLL*/
+.collapse.navbar-collapse {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 1em;
+    z-index: 1000;
+    margin: 1em;
+    transition: background-color 0.3s ease; 
+}
+
+.collapse.navbar-collapse.scrolled {
+    background-color: rgb(22 0 106);
+}
+
+.navbar-nav {
+    justify-content: center; 
+}
+
+.navbar-toggler {
+    position: fixed;
+    top: 40px; 
+    right: 10px;
+    z-index: 1100;
+}
+
+
+
 /* video */
 .video-header {
     position: relative;
@@ -370,7 +421,7 @@ img, .gif {
 .gallery {
     display: flex;
     gap: 10px; 
-    animation: scrollRightToLeft 20s linear infinite; 
+    animation: scrollRightToLeft 30s linear infinite; 
 }
 
 .gallery img {
@@ -394,12 +445,13 @@ img, .gif {
 .gallery-container2 {
     overflow: hidden;
     width: 100%; 
+    margin-top: 1em
 }
 
 .gallery2 {
     display: flex;
     gap: 10px; 
-    animation: scrollLeftToRight 20s linear infinite; 
+    animation: scrollLeftToRight 30s linear infinite; 
 }
 
 .gallery2 img {
