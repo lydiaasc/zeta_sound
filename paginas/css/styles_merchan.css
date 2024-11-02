@@ -1,0 +1,12 @@
+.title {
+    font-size: 3rem;
+    color: #3300ff;
+    font-weight: bold;
+    text-align: center;
+}
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #150067;
+    text-align: center;
+}
