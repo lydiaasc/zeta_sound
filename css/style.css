@@ -198,73 +198,6 @@
 }
 
 /* ARTISTAS */
-/* Estilos generales */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.title, .subtitle {
-    margin-bottom: 20px;
-}
-
-/* Carrusel */
-.carousel-container {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-    /* Ajusta el espacio entre las imágenes */
-    gap: 10px;
-}
-
-/* Ajuste de cada ítem del carrusel */
-.carousel-item {
-    min-width: 250px; /* Ajusta este ancho según el tamaño deseado de cada foto */
-    flex-shrink: 0;
-}
-
-.carousel-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilos para mostrar parcialmente las imágenes anteriores y siguientes */
-.carousel-container {
-    padding: 0 40px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-/* Agregamos flechas para navegar */
-.carousel-container::before,
-.carousel-container::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: 30px;
-    height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-    z-index: 1;
-    pointer-events: none;
-    transform: translateY(-50%);
-}
-
-.carousel-container::before {
-    left: 0;
-    transform: rotateY(180deg);
-}
-
-.carousel-container::after {
-    right: 0;
-}
 
 /* ABONOS */
 
@@ -421,6 +354,15 @@ iframe{
 #news .card-text {
     font-size: 1rem;
     color: #333;
+}
+
+/* Remueve el subrayado de los títulos h5 dentro de los botones */
+.card-news .btn-link {
+    text-decoration: none;
+}
+
+.card-news .btn-link:hover {
+    text-decoration: none; /* Asegura que no se subraye al pasar el cursor */
 }
 
 
