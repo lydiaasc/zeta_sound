@@ -1,3 +1,22 @@
+// CARRUSEL
+const carousel = document.querySelector('.carousel');
+let scrollAmount = 0;
+
+// Mover el carrusel hacia la derecha
+function slideNext() {
+    scrollAmount += 260; // Ajusta el valor según el ancho de cada elemento
+    carousel.style.transform = `translateX(-${scrollAmount}px)`;
+}
+
+// Mover el carrusel hacia la izquierda
+function slidePrev() {
+    scrollAmount -= 260;
+    if (scrollAmount < 0) scrollAmount = 0; // Evitar desplazamiento negativo
+    carousel.style.transform = `translateX(-${scrollAmount}px)`;
+}
+
+
+
 // GALERÍAS
 
 const gallery = document.querySelector('.gallery');
