@@ -2,6 +2,8 @@
     /* Border Radius Iguales */
     /* Paleta de color consistente */
 
+
+    
 /* HEADER */
 .navbar-expand-lg {
     background-color: transparent;
@@ -246,13 +248,13 @@
 #radio {
     text-align: center;
 }
-
 .video-radio-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 20px; /* Ajusta el valor según la separación que desees */
 }
 
 #radio .video-radio {
@@ -272,12 +274,8 @@
     display: block;
 }
 
-iframe{
-    border-radius: 12px;
-    position: absolute;
-    z-index: 1000;
-    display: flex;
-}
+
+
 
 
 
@@ -367,11 +365,6 @@ iframe{
 }
 
 
-.spotify {
-    position: absolute;
-    border-radius: 12px;
-    width: 50%;
-}
 
 #experience {
     margin: none !important;

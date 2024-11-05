@@ -3,63 +3,105 @@ body {
     color: #f8f9fa; 
 }
 
+p{
+    margin: 1em;
+    margin-top: 2em;
+    color: black;
+}
+
 .header {
-    background-color: #000;
-    color: #fff;
+    background-color: white;
     padding: 20px;
     text-align: center;
 }
 
 .logo-container img {
-    width: 150px;
+    width: 60%;
 }
 
+.back-home-btn {
+    background-color: #2200aa; 
+    color: white;           
+    border-radius: 20px;
+}
+
+
 .title {
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 3em;
+    color: white;
     text-align: center;
     margin-bottom: 10px;
 }
 
 .subtitle {
     text-align: center;
-    color: #666;
+    color: white;
     margin-bottom: 40px;
 }
 
+.logo-container{
+    margin-bottom: 1em;
+}
+
 .card {
-    border: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
 }
 
-.card:hover {
-    transform: scale(1.05);
+.card-img-top {
+    max-height: 200px;       /* Ajusta la altura según lo necesario */
+    object-fit: cover;       /* Mantiene la proporción de la imagen y la recorta si es necesario */
+    border-radius: 20px 20px 0px 0px; /* Borde redondeado solo en la parte superior */
 }
 
-.card-title {
-    font-size: 1.3rem;
-    color: #333;
-    font-weight: bold;
+
+.card-body {
+    flex: 1; /* Permite que el cuerpo de la tarjeta ocupe todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .price {
     font-size: 1.2rem;
-    color: #e91e63;
+    color: #2200aa;
     margin: 10px 0;
 }
 
 .btn-custom {
-    background-color: #e91e63;
+    background-color: #2200aa;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: background-color 0.3s;
 }
 
 .btn-custom:hover {
-    background-color: #d81b60;
+    background-color: white;
+    border-color: #2200aa;
+    color: #2200aa;
 }
+
+.btn-custom-buy {
+    background-color: white;       /* Fondo blanco solo para el botón */
+    color: #2200aa;                  /* Color del texto para contraste */
+    border: 1px solid #ddd;        /* Borde ligero */
+    padding: 10px 20px;            /* Espaciado interno */
+    border-radius: 20px;            /* Bordes redondeados */
+    text-decoration: none;         /* Elimina el subrayado del enlace */
+    font-weight: bold;             /* Hace el texto más grueso */
+    display: inline-block;         /* Para asegurar que el botón tenga un formato de bloque en línea */
+}
+
+/* Efecto de hover para el botón */
+.btn-custom-buy:hover {
+    background-color: #f0f0f0; /* Fondo gris claro al pasar el cursor */
+    color: #2200aa;
+}
+
 
 /* Footer */
 
