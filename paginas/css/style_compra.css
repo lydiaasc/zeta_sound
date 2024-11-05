@@ -142,3 +142,7 @@ p{
 .links-grid a:hover {
     color: #2200aa;
 }
+
+.container .artist{
+    font-size:80%;
+}
