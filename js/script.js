@@ -1,5 +1,37 @@
 AOS.init();
 
+$(document).ready(function () {
+    // Inicializamos el slider usando Swiper.js
+    var swiper = new Swiper(".tranding-slider", {
+      loop: true,
+      slidesPerView: 1,        // Cantidad de slides visibles
+      spaceBetween: 20,        // Espacio entre slides
+      centeredSlides: true,    // Centramos el slide activo
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,       // Paginación clickeable
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",  // Botón siguiente
+        prevEl: ".swiper-button-prev",  // Botón anterior
+      },
+      breakpoints: {            // Ajuste responsivo
+        500: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+  });
+  
 // GALERÍAS
 
 const gallery = document.querySelector('.gallery');
