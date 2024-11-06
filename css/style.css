@@ -178,19 +178,19 @@
 /* POPUP */
 
 .modal-content {
-    background-color: #3300ff; 
+    background-color: #150067; 
     color: white; 
 }
 
 .btn-close {
     background-color: white; 
-    color: #3300ff; 
+    color: #150067; 
     border-radius: 60%; 
     padding: 5px; 
 }
 
 .btn-close:hover {
-    background-color: #3300ff;
+    background-color: #150067;
     color: white; 
 }
 

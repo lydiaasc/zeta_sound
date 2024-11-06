@@ -66,8 +66,6 @@ document.getElementById('subscriptionForm').addEventListener('submit', function(
     window.location.href = 'index.html';
 });
 
-
-
 // COLOR MENU
 
 document.addEventListener("scroll", function() {
@@ -101,4 +99,30 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   }
+});
+
+
+// POPUP MERCH
+
+// Función para mostrar el popup
+function mostrarPopup() {
+  document.getElementById("popup2-compra").style.display = "flex";
+}
+
+// Función para cerrar el popup
+function cerrarPopup() {
+  document.getElementById("popup2-compra").style.display = "none";
+}
+
+// Añadir evento a todos los botones "Añadir al carrito"
+document.querySelectorAll(".btn.btn-custom2").forEach(button => {
+  button.addEventListener("click", function(event) {
+      event.preventDefault(); // Evita el comportamiento por defecto
+      mostrarPopup(); // Muestra el popup
+  });
+});
+
+// Añadir evento al botón de cerrar en el popup
+document.getElementById("cerrar-popup2").addEventListener("click", function() {
+  cerrarPopup(); // Cierra el popup
 });
