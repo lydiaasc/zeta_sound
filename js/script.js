@@ -4,9 +4,9 @@ $(document).ready(function () {
     // Inicializamos el slider usando Swiper.js
     var swiper = new Swiper(".tranding-slider", {
       loop: true,
-      slidesPerView: 1,        // Cantidad de slides visibles
-      spaceBetween: 20,        // Espacio entre slides
-      centeredSlides: true,    // Centramos el slide activo
+      slidesPerView: 1,        
+      spaceBetween: 20,       
+      centeredSlides: true,    
       pagination: {
         el: ".swiper-pagination",
         clickable: true,       // Paginación clickeable
@@ -102,27 +102,4 @@ var TrandingSlider = new Swiper('.tranding-slider', {
 });
 
 
-// POPUP MERCH
 
-// Función para mostrar el popup
-function mostrarPopup() {
-  document.getElementById("popup2-compra").style.display = "flex";
-}
-
-// Función para cerrar el popup
-function cerrarPopup() {
-  document.getElementById("popup2-compra").style.display = "none";
-}
-
-// Añadir evento a todos los botones "Añadir al carrito"
-document.querySelectorAll(".btn.btn-custom2").forEach(button => {
-  button.addEventListener("click", function(event) {
-      event.preventDefault(); // Evita el comportamiento por defecto
-      mostrarPopup(); // Muestra el popup
-  });
-});
-
-// Añadir evento al botón de cerrar en el popup
-document.getElementById("cerrar-popup2").addEventListener("click", function() {
-  cerrarPopup(); // Cierra el popup
-});
