@@ -65,7 +65,7 @@
             </nav>
             <div class="logo logo-container">
                 <img src="media/logo_color_Zeta_Sound.png" class="img-fluid" alt="...">
-                <p class="header-text">Creado para gente que mueve el mundo</p>
+                <!-- <p class="header-text">Creado para gente que mueve el mundo</p> -->
                 <a href="#city" class="btn-1">
                   <i class="fa-solid fa-chevron-down fa-2x" style="color: #ffffff;"></i>
                 </a>
@@ -135,69 +135,81 @@
             </div>
     </section>
 
-    <!-- CREATE -->
     <section class="container-fluid vh-100 d-flex flex-column section-with-margins">
-      <div class="row h-100">
+      <div class="row h-100 flex-wrap">
         <!-- Left Section -->
-        <div class="col-md-6 left-section">
+        <div class="col-12 col-md-6 left-section">
           <span class="overlay-text">DESDE 2024</span>
           <img src="media/create_rosalia.webp" alt="Zeta Sound">
           <h1>zeta sound</h1>
         </div>
         <!-- Right Section -->
-        <div class="col-md-6 right-section">
+        <div class="col-12 col-md-6 right-section">
           <h2>Creado para gente que mueve el mundo.</h2>
         </div>
       </div>
     </section>
-
+    
     <section id="tickets" class="container my-5">
-        <div class="container mt-5">
-          
-          <h1 class="title">Elige tu abono</h1>
-          <p class="subtitle">No hay nada mejor que saber lo que quieres</p>
-          
-          <div class="row justify-content-center">
-            <div class="col-md-3" data-aos="zoom-out">
-              <div class="tickets">
-                <h3>General</h3>
-                <p>Acceso general.</p>
-              </div>
+      <div class="container mt-5">
+        <h1 class="title">Elige tu abono</h1>
+        <p class="subtitle">No hay nada mejor que saber lo que quieres</p>
+        
+        <div class="row justify-content-center">
+          <div class="col-md-3" data-aos="zoom-out">
+            <div class="tickets" onclick="showModalAndStartCountdown()">
+              <h3>General</h3>
+              <p>Acceso general.</p>
             </div>
-            <div class="col-md-3" data-aos="zoom-out">
-              <div class="tickets">
-                <h3>VIP</h3>
-                <p>Acceso general.</p>
-                <p>Acceso Front Stage o plataforma VIP elevada.</p>
-                <p>Barra privada.</p>
-                <p>Baños privados.</p>
-              </div>
+          </div>
+          <div class="col-md-3" data-aos="zoom-out">
+            <div class="tickets" onclick="showModalAndStartCountdown()">
+              <h3>VIP</h3>
+              <p>Acceso general.</p>
+              <p>Acceso Front Stage o plataforma VIP elevada.</p>
+              <p>Barra privada.</p>
+              <p>Baños privados.</p>
             </div>
-
-            <div class="col-md-3" data-aos="zoom-out">
-              <div class="tickets">
-                <h3>Entrada de día</h3>
-                <p>Acceso general.</p>
-              </div>
-            </div>
-            
-            <div class="col-md-3" data-aos="zoom-out">
-              <div class="tickets">
-                <h3>Front Stage</h3>
-                <p>Acceso Front Stage.</p>
-              </div>
+          </div>
+    
+          <div class="col-md-3" data-aos="zoom-out">
+            <div class="tickets" onclick="showModalAndStartCountdown()">
+              <h3>Entrada de día</h3>
+              <p>Acceso general.</p>
             </div>
           </div>
           
-          <!-- Botón -->
-          <div class="container my-5 d-flex justify-content-end">
-            <!-- Botón que redirige a otra página -->
-            <a href="paginas/compra.html" class="btn-custom">Prepárate para ver a tus artistas favoritos</a>
+          <div class="col-md-3" data-aos="zoom-out">
+            <div class="tickets" onclick="showModalAndStartCountdown()">
+              <h3>Front Stage</h3>
+              <p>Acceso Front Stage.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Botón -->
+        <div class="container my-5 d-flex justify-content-end">
+          <a href="paginas/compra.html" class="btn-custom">Prepárate para ver a tus artistas favoritos</a>
         </div>
         
       </div>
     </section>
 
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog2">
+        <div class="modal-content modal-content2">
+          <div class="modal-header">
+            <button type="button" class="btn-close btn-close2" data-bs-dismiss="modal" aria-label="Close"></button>
+            <p>Recarga de nuevo</p>
+          </div>
+          <div class="modal-body modal-body2">
+            <div id="countdown"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <section id="news" class="container my-5">
       <h1 class="title">Highlights & News</h1>
       <p class="subtitle">¿Cómo que aún no sabes todo de nosotros? Toma anda...</p>
@@ -272,8 +284,7 @@
           </div>
       </div>
   </section>
-  
-    
+      
 
     <section id="artist" class="container my-5">
       <h1 class="title">Artistas</h1>
@@ -323,7 +334,7 @@
         <div class="content swiper-slide">
           <img src="media/artist_recycledj.jpg" alt="">
           <div class="text-content">
-            <h3>Recicled J</h3>
+            <h3>Recycled J</h3>
             
           </div>
         </div>
@@ -350,8 +361,6 @@
         <h1 class="title">Zeta Experience</h1>
         <p class="subtitle">¿No quieres disfrutar como ellos? Apúntate tontorrón</p>
       </div>
-
-
   </section>
 
   <div class="gallery-container">
@@ -491,8 +500,5 @@
      <script src="js/script.js"></script>
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
-
-     
   </body>
 </html>

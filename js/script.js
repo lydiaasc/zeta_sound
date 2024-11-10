@@ -1,7 +1,6 @@
 AOS.init();
 
 $(document).ready(function () {
-    // Inicializamos el slider usando Swiper.js
     var swiper = new Swiper(".tranding-slider", {
       loop: true,
       slidesPerView: 1,        
@@ -9,13 +8,13 @@ $(document).ready(function () {
       centeredSlides: true,    
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,       // Paginación clickeable
+        clickable: true,       
       },
       navigation: {
-        nextEl: ".swiper-button-next",  // Botón siguiente
-        prevEl: ".swiper-button-prev",  // Botón anterior
+        nextEl: ".swiper-button-next",  
+        prevEl: ".swiper-button-prev",  
       },
-      breakpoints: {            // Ajuste responsivo
+      breakpoints: {           
         500: {
           slidesPerView: 1,
           spaceBetween: 10,
@@ -70,7 +69,7 @@ document.getElementById('subscriptionForm').addEventListener('submit', function(
 
 document.addEventListener("scroll", function() {
     const navbar = document.querySelector(".collapse.navbar-collapse");
-    if (window.scrollY > 10) { // Cambia el valor si quieres que el fondo aparezca antes o después
+    if (window.scrollY > 10) { 
         navbar.classList.add("scrolled");
     } else {
         navbar.classList.remove("scrolled");
@@ -99,6 +98,10 @@ var swiper = new Swiper(".mySwiper", {
 
 });
 
+function showModalAndStartCountdown() {
+  const countdownElement = document.getElementById('countdown');
+  new bootstrap.Modal(document.getElementById('exampleModal')).show();
+}
 
 
 
