@@ -636,7 +636,7 @@ label {
 input {
     width: 100%;
     padding: 10px;
-    border: 1px solid --neon;
+    border: 1px solid;
     border-radius: 30px;
 }
 
